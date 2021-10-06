@@ -20,6 +20,7 @@ namespace SkateClubWeb.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("AuthDbContextConnection")));
 
+                //removing built in  mail validation for now
                 services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
                     .AddEntityFrameworkStores<AuthDbContext>();
             });
