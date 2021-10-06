@@ -43,7 +43,7 @@ namespace SkateClubWeb.Controllers
         }
 
         [HttpPost]
-        public IActionResult ContactUs()
+        public IActionResult ContactUs(SendMailDto sendMailDto)
         {
             return View();
         }
