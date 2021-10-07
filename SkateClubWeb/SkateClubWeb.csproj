@@ -16,7 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Folder Include="wwwroot\css\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\Images\gallery-image-1.jpg" />
   </ItemGroup>
 
 </Project>
