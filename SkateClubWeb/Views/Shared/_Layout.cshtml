@@ -19,18 +19,32 @@
                     <!-- Load in LoginPartial page when a user is logged in-->
                     <partial name="_LoginPartial.cshtml" />
 
+                    <!-- Contact Us button-->
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Gallery" asp-action="Index">Gallery</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- 
+    <div class="row">
+
+            <img src="~/css/Images/gallery-image-1.jpg" alt="image" />
+
+    </div>
+        -->
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+
         </main>
     </div>
 
